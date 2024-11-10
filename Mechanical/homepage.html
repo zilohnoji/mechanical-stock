@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/style/pages/homepage/homepage.css">
+  <title>Sistema Mecânico - Home</title>
+</head>
+
+<body>
+  <header>
+    <div class="header d-flex space-between">
+      <h1 class="title font-poppins f-weight-400">Produtos</h1>
+      <div class="d-flex gap-3 align-items-center">
+        <form action="GET" id="input-search-form">
+          <div class="container-input d-flex align-items-center">
+            <img src="/assets/icons/search.svg" alt="Search icon" class="search-icon">
+            <input type="text" name="name" placeholder="Buscar produto por nome ou preço" id="input-search">
+          </div>
+        </form>
+        <form action="GET" id="form-search" class="d-flex space-between align-items-center gap-3">
+          <button type="submit" id="form-button-header" class="btn-linear-gradient">ADICIONAR</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <div class="container-close-button">
+        <button data-modal="close-button">
+          <img src="/assets/icons/close.svg" class="close-button" alt="Close button">
+        </button>
+      </div>
+      <h3 class="font-poppins f-weight-400">Adicionar um novo produto</h3>
+      <form action="POST" id="form-add-product">
+        <div class="double-input d-flex">
+          <div>
+            <label for="name">Nome do produto</label>
+            <input type="text" name="name" id="name" placeholder="Digite o nome do produto">
+          </div>
+          <div>
+            <label for="price">Preço</label>
+            <input type="text" name="price" id="price" placeholder="Digite o preço unitário">
+          </div>
+        </div>
+        <div>
+          <label for="quantity">Quantidade</label>
+          <input type="text" name="quantity" id="quantity" placeholder="Quantidade em estoque">
+        </div>
+        <div class="add-btn d-flex justify-content-center">
+          <button class="font-poppins  btn-linear-gradient" type="submit">ADICIONAR</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="modal-container-update" data-modal="container">
+    <div class="modal-update">
+      <div class="container-close-button">
+        <button data-modal="close-button-update">
+          <img src="/assets/icons/close.svg" class="close-button-update" alt="Close button">
+        </button>
+      </div>
+      <h3 class="font-poppins f-weight-400">Editar produto</h3>
+      <form action="POST" id="form-edit-product">
+        <div class="double-input d-flex">
+          <div>
+            <label for="name">Nome do produto</label>
+            <input type="text" name="name" placeholder="Digite o nome do produto">
+          </div>
+          <div>
+            <label for="price">Preço</label>
+            <input type="text" name="price" placeholder="Digite o preço unitário">
+          </div>
+        </div>
+        <div>
+          <label for="quantity">Quantidade</label>
+          <input type="text" name="quantity" placeholder="Quantidade em estoque">
+        </div>
+        <div class="add-btn d-flex justify-content-center">
+          <button class="font-poppins  btn-linear-gradient" type="submit">ATUALIZAR</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <main>
+    <div class="counter-items">
+      <p class="font-roboto" id="show-items"></p>
+      <img src="/assets/icons/update.svg" alt="Update icon" id="update-icon" class="d-none">
+    </div>
+    <table class="table">
+      <thead id="table-head">
+        <tr class="d-flex">
+          <th>ID</th>
+          <th>NOME</th>
+          <th>PREÇO</th>
+          <th>QUANTIDADE</th>
+          <th>TOTAL</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+  </main>
+  <script src="/assets/js/pages/homepage/modal.js" defer></script>
+  <script src="/assets/js/pages/homepage/getAll.js" defer></script>
+</body>
+
+</html>

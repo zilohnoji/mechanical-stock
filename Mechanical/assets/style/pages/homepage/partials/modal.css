@@ -1,0 +1,129 @@
+.modal-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+}
+.modal-container .modal {
+  padding: 2.5rem;
+  border-radius: 5px;
+  width: 52rem;
+  height: 41rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.15);
+}
+.modal-container .modal h3 {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 2.62rem;
+}
+.modal-container .modal .double-input {
+  gap: 1rem;
+  justify-content: center;
+}
+.modal-container .modal .double-input div {
+  flex: 1;
+}
+.modal-container .modal .add-btn {
+  margin-top: 2.5rem;
+}
+.modal-container .modal .add-btn button {
+  color: #ffffff;
+  padding: 1.5rem 6rem;
+}
+.modal-container .modal .add-btn button:hover {
+  cursor: pointer;
+}
+.modal-container .modal input {
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid #838383;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.modal-container .modal label {
+  display: block;
+  font-size: 1.5rem;
+  font-family: var(--font-roboto);
+}
+.modal-container .modal .container-close-button {
+  display: flex;
+  justify-content: end;
+}
+.modal-container .modal .container-close-button > button {
+  background: none;
+}
+.modal-container .modal .container-close-button > button:hover {
+  cursor: pointer;
+}
+
+.modal-container-update {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+}
+.modal-container-update .modal-update {
+  padding: 2.5rem;
+  border-radius: 5px;
+  width: 52rem;
+  height: 41rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.15);
+}
+.modal-container-update .modal-update h3 {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 2.62rem;
+}
+.modal-container-update .modal-update .double-input {
+  gap: 1rem;
+  justify-content: center;
+}
+.modal-container-update .modal-update .double-input div {
+  flex: 1;
+}
+.modal-container-update .modal-update .add-btn {
+  margin-top: 2.5rem;
+}
+.modal-container-update .modal-update .add-btn button {
+  color: #ffffff;
+  padding: 1.5rem 6rem;
+}
+.modal-container-update .modal-update .add-btn button:hover {
+  cursor: pointer;
+}
+.modal-container-update .modal-update input {
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid #838383;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.modal-container-update .modal-update label {
+  display: block;
+  font-size: 1.5rem;
+  font-family: var(--font-roboto);
+}
+.modal-container-update .modal-update .container-close-button {
+  display: flex;
+  justify-content: end;
+}
+.modal-container-update .modal-update .container-close-button > button {
+  background: none;
+}
+.modal-container-update .modal-update .container-close-button > button:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=modal.css.map */
